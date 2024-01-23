@@ -1,11 +1,15 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Total Drama Island Script", "DarkTheme")
 
---Scripts
-local Scripts = Window:NewTab("Scripts & More")
-local MainSection = Window:NewTab("Scripts")
+--Main
+local Main = Window:NewTab("Scripts & More")
+local MainSection = Main:NewSection("Scripts")
 
 
-MainSection:NewButton("ButtonText", "ButtonInfo", function()
-    print("Clicked")
+MainSection:NewButton("Infinite Yield", "Executes the script shown", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+MainSection:NewButton("Dex/Explorer", "Executes the script shown", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceSpiffer/Scripts/main/Script5", true))()
 end)
