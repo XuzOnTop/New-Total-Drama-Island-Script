@@ -1,6 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Total Drama Island Script", "DarkTheme")
 
+
 --Main
 local Main = Window:NewTab("Scripts & More")
 local MainSection = Main:NewSection("Scripts")
@@ -12,4 +13,17 @@ end)
 
 MainSection:NewButton("Dex/Explorer", "Executes the script shown", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceSpiffer/Scripts/main/Script5", true))()
+end)
+
+MainSection:NewButton("C-Frame Grabber", "Executes the script shown", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/xUuTxC4z'))()
+end)
+
+--Win
+local Main = Window:NewTab("Win")
+local MainSection = Main:NewSection("Scripts")
+
+
+MainSection:NewButton("Coin Win", "Executes the script shown", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/Coin%20Script'))()
 end)
