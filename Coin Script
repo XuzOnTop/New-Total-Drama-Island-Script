@@ -1,0 +1,35 @@
+-- Don't skid please
+
+local function findAndTeleport(targetNames)
+    local timeout = 8 -- Set the timeout duration in seconds
+    local startTime = tick()
+
+    while tick() - startTime <= timeout do
+        for _, targetName in pairs(targetNames) do
+            for _, child in pairs(workspace:GetChildren()) do
+                if child.Name == targetName then
+                    if child:IsA("BasePart") then
+                        local teleportLocation = child.Position
+                        print("Teleporting to", targetName, "at", teleportLocation)
+                        -- Replace the teleport logic with the desired action outside of Roblox Studio
+                        return true
+                    end
+                end
+            end
+        end
+        wait(1) -- Wait for 1 second before checking again
+    end
+
+    print("Timeout. Blocks not found.")
+    return false
+end
+
+local targetBlockNames = {"Coin", "Coin1", "Coin2", "Coin3", "Coin4", "Coin5", "Coin6", "Coin7", "Coin8", "Coin9", "Coin10", "Coin11", "Coin12", "Coin13"}
+
+-- Call the function to find and teleport
+local success = findAndTeleport(targetBlockNames)
+
+-- Check if the blocks were found
+if not success then
+    print("Blocks not found within the timeout.")
+end
