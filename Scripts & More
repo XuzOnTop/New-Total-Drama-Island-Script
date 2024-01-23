@@ -27,3 +27,9 @@ local MainSection = Main:NewSection("Scripts")
 MainSection:NewButton("Coin Win", "Executes the script shown", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/Coin%20Script'))()
 end)
+
+
+MainSection:NewButton("Cliff Diving Win", "Executes the script shown", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/Cliff%20Diving%20Script'))()
+end)
+
