@@ -1,0 +1,11 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Total Drama Island Script", "DarkTheme")
+
+--Scripts
+local Scripts = Window:NewTab("Scripts & More")
+local MainSection = Window:NewTab("Scripts")
+
+
+MainSection:NewButton("ButtonText", "ButtonInfo", function()
+    print("Clicked")
+end)
