@@ -34,6 +34,15 @@ MainSection:NewButton("Cliff Diving Win", "Executes the script shown", function(
 end)
 
 
-MainSection:NewButton("Cliff Diving Win", "Executes the script shown", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/RockWall%20Win'))()
+MainSection:NewButton("Rickety Rails Win", "Executes the script shown", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/Rickety%20Rails%20Win'))()
+end)
+
+MainSection:NewButton("Paintball Win", "Executes the script shown", function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/PaintBall%20Win'))()
+end)
+
+
+MainSection:NewButton("Rockwall Win", "Executes the script shown", function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/RockWall%20Win'))()
 end)
