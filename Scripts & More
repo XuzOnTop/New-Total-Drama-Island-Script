@@ -33,3 +33,7 @@ MainSection:NewButton("Cliff Diving Win", "Executes the script shown", function(
     loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/Cliff%20Diving%20Script'))()
 end)
 
+
+MainSection:NewButton("Cliff Diving Win", "Executes the script shown", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/XuzOnTop/New-Total-Drama-Island-Script/main/RockWall%20Win'))()
+end)
